@@ -1,0 +1,319 @@
+$color-text: rgb(255,255,255);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link   {
+    text-decoration: none;
+    color: $color-text;
+    font-family: DM Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+body    {
+    background: rgb(25, 25, 25);
+    
+    font-family: 'DM sans';
+}
+
+.center {
+    padding-left: calc(50% - 650px);
+    padding-right: calc(50% - 650px);
+}
+
+/* ++++++ Header ++++++++ */
+
+.header {
+    height: 119px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-left: calc(50% - 700px);
+    padding-right: calc(50% - 700px);
+    
+    .logo   {
+        width: 159.15px;
+        height: 32.62px;
+        padding-left: 50px
+    }
+    
+    .nav    {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding-right: 50px;
+    }
+}
+
+/* ------ HEADEER ------ */
+
+/* +++++++ TOP ++++++++++ */
+
+.top    {
+    height: 913px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(7, 1fr);
+    column-gap: 60px;
+
+    .imgtop {
+        background-image: url(castaway/jcbtop.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-row: span 7;
+    }
+    
+    &-block   {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-row-end: span 4;
+        align-self: center;
+        padding-right: 64px;
+
+        .toptitle   {
+            color: $color-text;
+            font-size: 70px;
+            font-weight: 400;
+            line-height: 88px;
+            letter-spacing: 3.2px;
+            text-align: left;
+        }
+    }
+    
+    .toplink    {
+        grid-column-start: 2;
+        grid-row-start: 6;
+        grid-row-end: span 1;
+        padding-left: 22px;
+        justify-content: start;
+        align-self: center;
+
+        .linkto {
+            display: flex;
+            gap: 17px;
+            }
+                
+            .toptitle3  {
+                color: $color-text;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+                margin-bottom: 16px;
+            }
+    }
+    
+}
+
+
+/* -------- TOP --------- */
+
+/* ++++++ Lastep ++++++++ */
+.lastep {
+    margin-top: 93px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.lastep-title   {
+    color: $color-text;
+    font-family: DM Sans;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 79.2px;
+    letter-spacing: 2.88px;
+    text-align: left;   
+}
+
+.lastep-button  {
+    border-radius: 6px;
+    background: rgb(17, 141, 168);
+    width: 178px;
+height: 51px;
+    color: $color-text;
+    font-family: DM Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+/* -------- Lastep ------ */
+
+
+/* ++++++ episode ++++++++ */
+.episode-block  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 545px;
+    border-radius: 32px;
+    background: rgb(0, 0, 0);
+    margin-top: 66px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    column-gap: 53px;
+}
+
+.ep-img {
+    width: 389px;
+    height: 465px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.episode {
+    height: 432px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    padding-top: 8px;
+}
+
+.filter {
+    color: $color-text;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 27px;
+    width: 73px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 6px;
+    background: rgb(25, 25, 25);
+    margin-bottom: 48px;
+}
+
+.filterbig  {
+    width: 136px;
+}
+
+.ep-title   {
+    color: rgb(17, 141, 168);
+    font-family: DM Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left; 
+    margin-bottom: 18px; 
+}
+
+.ep-main-title  {
+    width: 701px;
+    color: $color-text;
+    font-family: DM Sans;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 70.4px;
+    letter-spacing: 2.56px;
+    text-align: left; 
+    margin-bottom: 28px;   
+}
+
+.ep-text    {
+    width: 757px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: DM Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left; 
+    margin-bottom: 18px;  
+}
+
+.ep-button  {
+    border-radius: 6px;
+    background: rgb(17, 141, 168);
+    color: $color-text;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px; 
+    width: 208px;
+    height: 51px;  
+}
+/* -------- episode ------ */
+
+/* -------- jacob --------- */
+
+.jacob  {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 60px;
+margin-top: 260px;
+}
+
+.jacob-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 590px;
+    height: 448px;
+}
+
+.jcb-img    {
+    background-image: url(castaway/jcb.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 650px;
+    height: 743px;
+    border-radius: 16px;  
+}
+
+.jcb-follow {
+    width: 112px;
+    height: 112px; 
+    margin-bottom: 20px;  
+}
+
+.jcb-title  {
+    color: rgb(17, 141, 168);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left; 
+    margin-bottom: 25px;  
+}
+
+.jcb-main-title {
+    color: $color-text;
+    font-family: DM Sans;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 79.2px;
+    letter-spacing: 2.88px;
+    text-align: left;
+    margin-bottom: 28px;
+}
+
+.jcb-paragaf    {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left; 
+}
+
+.p1 {
+    margin-bottom: 33px;
+}
+/* ++++++++ jacob +++++++++ */
